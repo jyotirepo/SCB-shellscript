@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 HOSTN=`/bin/hostname`
 OS=`cat /etc/*-release`
 ARCH=`/bin/uname -p`
