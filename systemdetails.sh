@@ -26,7 +26,7 @@ SWAPU=`swapon -s | grep -vE '^Filename' | awk '{ printf $4}'`
 SWAPP=`swapon -s | grep -vE '^Filename' | awk '{ printf $5}'`
 MAC=`cat /sys/class/net/*/address`
 SM=`ifconfig eth1 | grep "inet addr" | cut -d ":" -f4`
-echo -ne "\n"
+echo -ne '\n'
 echo "###################SERVER-DETAILS######################"
 echo " HOSTNAME = $HOSTN "
 echo " OPERATING SYSTEM = $OS"
@@ -52,7 +52,7 @@ echo " IP ADDRESS = $IP"
 echo " SUBNET MASK = $SM"
 echo " MAC ADDRESS = $MAC"
 echo "###################SERVER-DETAILS######################"
-echo -ne "\n"
+echo -ne '\n'
 if command -v python &>/dev/null; then
     echo Python  is installed
     pyv="$(python -V 2>&1)"
