@@ -5,7 +5,7 @@ ARCH=`/bin/uname -p`
 CPUI=`cat /proc/cpuinfo | grep "model name" | cut -d ":" -f2`
 CPU=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 MANUFAC=`/usr/sbin/dmidecode --type system | grep Manufacturer | cut -d ":" -f2`
-PRODUCTNAME=`/usr/sbin/dmidecode | grep "Product Name: V" | cut -d ":" -f2 | awk                                                                                             '$1=$1'`
+PRODUCTNAME=`/usr/sbin/dmidecode | grep "Product Name: V" | cut -d ":" -f2 | awk '$1=$1'`
 CPUI=`cat /proc/cpuinfo | grep "model name" | cut -d ":" -f2`
 CPU=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 CPUOM=`/usr/bin/lscpu | grep "CPU op" | cut -d ":" -f2 | awk '$1=$1'`
@@ -13,11 +13,11 @@ CPUC=`/usr/bin/lscpu | grep -i "CPU(s):" | cut -d ":" -f2 | awk '$1=$1'`
 CPUS=`/usr/bin/lscpu | grep -i "Socket(s)" | cut -d ":" -f2 | awk '$1=$1'`
 CPUMHZ=`/usr/bin/lscpu | grep -i "CPU MHz" | cut -d ":" -f2 | awk '$1=$1'`
 MEMUSAGE=`top -n 1 -b | grep "Mem"`
-MAXMEM=`echo $MEMUSAGE | cut -d" " -f2 | awk '{print substr($0,1,length($0)-1)}'                                                                                            `
-USEDMEM=`echo $MEMUSAGE | cut -d" " -f4 | awk '{print substr($0,1,length($0)-1)}                                                                                            '`
+MAXMEM=`echo $MEMUSAGE | cut -d" " -f2 | awk '{print substr($0,1,length($0)-1)}'`
+USEDMEM=`echo $MEMUSAGE | cut -d" " -f4 | awk '{print substr($0,1,length($0)-1)}'`
 USEDMEM1=`expr $USEDMEM \* 100`
 PERCENTAGE=`expr $USEDMEM1 / $MAXMEM`%
-DISK=`df -H | grep -vE '^Filesystem|tmpfs|cdrom' | awk '{ printf $5 " " $1" | "}                                                                                            '`
+DISK=`df -H | grep -vE '^Filesystem|tmpfs|cdrom' | awk '{ printf $5 " " $1" | "}'`
 IP=`ifconfig eth1 | grep "inet addr" | cut -d ":" -f2 | awk '{printf $1}'`
 SM=`ifconfig eth1 | grep "inet addr" | cut -d ":" -f4`
 SWAPFS=`swapon -s | grep -vE '^Filename' | awk '{ printf $1}'`
