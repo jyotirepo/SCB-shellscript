@@ -54,10 +54,10 @@ echo " MAC ADDRESS = $MAC"
 echo "###################SERVER-DETAILS######################"
 echo -ne '\n'
 if command -v python &>/dev/null; then
-    echo Python  is installed
+    echo "Python  is installed"
     pyv="$(python -V 2>&1)"
     echo "$pyv"
 else
-    echo Python  is not installed
+    echo "Python  is not installed"
 fi
 echo "#################################"
