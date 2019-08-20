@@ -1038,3 +1038,83 @@ Red Hat Enterprise Linux release 8.0 (Ootpa)
  MAC ADDRESS = 0e:62:40:d0:43:b6
 00:00:00:00:00:00
 ####################SERVER-DETAILS ######################
+
+###################SERVER-DETAILS######################
+ HOSTNAME = ip-172-31-84-246.ec2.internal 
+ OPERATING SYSTEM = NAME="Amazon Linux"
+VERSION="2"
+ID="amzn"
+ID_LIKE="centos rhel fedora"
+VERSION_ID="2"
+PRETTY_NAME="Amazon Linux 2"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2"
+HOME_URL="https://amazonlinux.com/"
+Amazon Linux release 2 (Karoo)
+ ARCHITECTURE = x86_64
+ MANUFACTURER = 
+ PRODUCT NAME = 
+ CPU TYPE =  Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+ CPU USAGE = 6.2
+ CPU OP-MODE(s) = 32-bit, 64-bit
+ NO. OF CPU = 1
+ NO. OF CPU SOCKETS = 1
+ CPU SPEED IN MHz = 2400.160
+ MAXIMUM MEMORY = Me
+ USED MEMORY = 100733
+ PERCENTAGE MEMORY USED = %
+ SWAP DETAILS :-
+       a. File System = 
+       b. Size = 
+       c. Used = 
+       d. Priority = 
+ DISK DETAILS [% Usage, FileSystem] = 30% /dev/xvda1 | 
+ IP ADDRESS = 
+ SUBNET MASK = 
+ MAC ADDRESS = 12:d4:6c:8e:f4:ea
+00:00:00:00:00:00
+####################SERVER-DETAILS ######################
+
+###################SERVER-DETAILS######################
+ HOSTNAME = ip-172-31-32-166.ec2.internal 
+ OPERATING SYSTEM = NAME="Red Hat Enterprise Linux"
+VERSION="8.0 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.0"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.0 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8.0:GA"
+HOME_URL="https://www.redhat.com/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.0
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.0"
+Red Hat Enterprise Linux release 8.0 (Ootpa)
+Red Hat Enterprise Linux release 8.0 (Ootpa)
+ ARCHITECTURE = x86_64
+ MANUFACTURER = 
+ PRODUCT NAME = 
+ CPU TYPE =  Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+ CPU USAGE = 6.2
+ CPU OP-MODE(s) = 32-bit, 64-bit
+ NO. OF CPU = 1
+ NO. OF CPU SOCKETS = 1
+ CPU SPEED IN MHz = 2400.095
+ MAXIMUM MEMORY = Me
+ USED MEMORY = 819.
+ PERCENTAGE MEMORY USED = %
+ SWAP DETAILS :-
+       a. File System = 
+       b. Size = 
+       c. Used = 
+       d. Priority = 
+ DISK DETAILS [% Usage, FileSystem] = 12% /dev/xvda2 | 
+ IP ADDRESS = 
+ SUBNET MASK = 
+ MAC ADDRESS = 0e:62:40:d0:43:b6
+00:00:00:00:00:00
+####################SERVER-DETAILS ######################
