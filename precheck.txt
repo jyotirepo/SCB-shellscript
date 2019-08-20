@@ -331,3 +331,40 @@ fail
 fail
 ****************************
  
+  
+1.root space is: /dev/xvda1      8.0G  2.4G  5.7G  30% /
+server has enough root space: Pass
+*************************
+  
+2.kernal version is: 4.14.123-111.109.amzn2.x86_64 and echo kernel header version is: 
+ comparing both values
+fail
+***************************
+  
+3.Python  is installed
+Python version: Python 2.7.16
+python version is greator than 2.4 :pass
+***************************
+ 
+4.Bootloader is: GRUB 
+server has grub bootloader:pass
+****************************
+ 
+  
+1.root space is: /dev/xvda2       10G  1.2G  8.9G  12% /
+server has enough root space: Pass
+*************************
+  
+2.kernal version is: 4.18.0-80.4.2.el8_0.x86_64 and echo kernel header version is: 
+ comparing both values
+fail
+***************************
+  
+Python is not installed
+fail
+***************************
+ 
+4.Bootloader is: 
+fail
+****************************
+ 
