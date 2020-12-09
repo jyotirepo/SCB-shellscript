@@ -34,16 +34,3 @@ if [ "$ver" -gt "24" ]; then
     else
     echo "fail"
 fi
-echo "***************************"
-echo " "
-prerequisite=GRUB
-BOOTLOADER=`sudo dd if=/dev/sda bs=512 count=1 2>/dev/null | strings | grep -i grub`
-echo "4.Bootloader is: $BOOTLOADER"
-if [ $BOOTLOADER == $prerequisite ]
-then
-echo "server has grub bootloader:pass"
-else
-echo "fail"
-fi
-echo "****************************"
-echo " "
